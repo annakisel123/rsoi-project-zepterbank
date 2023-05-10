@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>AddCredit</servlet-name>
+        <servlet-class>controller.AddCredit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCredit</servlet-name>
+        <url-pattern>/cconfD</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddDeposit</servlet-name>
+        <servlet-class>controller.AddDeposit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDeposit</servlet-name>
+        <url-pattern>/confD</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddForm</servlet-name>
+        <servlet-class>controller.AddForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddForm</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>controller.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/addClient</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CList</servlet-name>
+        <servlet-class>controller.CList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CList</servlet-name>
+        <url-pattern>/clist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CListdoc</servlet-name>
+        <servlet-class>controller.CListdoc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CListdoc</servlet-name>
+        <url-pattern>/credits</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CloseCredit</servlet-name>
+        <servlet-class>controller.CloseCredit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CloseCredit</servlet-name>
+        <url-pattern>/CloseCredit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CloseDeposit</servlet-name>
+        <servlet-class>controller.CloseDeposit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CloseDeposit</servlet-name>
+        <url-pattern>/CloseDeposit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>controller.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Invoices</servlet-name>
+        <servlet-class>controller.Invoices</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Invoices</servlet-name>
+        <url-pattern>/invoices</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>List</servlet-name>
+        <servlet-class>controller.List</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>List</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Listdoc</servlet-name>
+        <servlet-class>controller.Listdoc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Listdoc</servlet-name>
+        <url-pattern>/deposits</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewCredit</servlet-name>
+        <servlet-class>controller.NewCredit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewCredit</servlet-name>
+        <url-pattern>/cnew</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewDeposit</servlet-name>
+        <servlet-class>controller.NewDeposit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewDeposit</servlet-name>
+        <url-pattern>/new</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Read</servlet-name>
+        <servlet-class>controller.Read</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Read</servlet-name>
+        <url-pattern>/clients</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFormServlet</servlet-name>
+        <servlet-class>controller.UpdateFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFormServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>controller.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/updateClient</url-pattern>
+    </servlet-mapping>
+
+</web-app>

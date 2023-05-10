@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-center {
+    place-items: center;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+}
+
+.index-page {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    height: 45vw;
+}
+
+.index-page__bank-logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.index-page__list {
+    width: 70%;
+    list-style: none;
+    outline: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.index-page__list__item {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.index-page__list__item__img-wrapper {
+    display: flex;
+    justify-content: center;
+    place-self: center;
+    height: 14vw;
+    width: 14vw;
+    margin: 5%;
+    background-color: #d83924;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: .15s;
+    cursor: pointer;
+}
+
+.index-page__list__item__img-wrapper:hover {
+    background-color: #da3635;
+    transition: .15s;
+}
+
+.index-page__list__item__img-wrapper__img {
+    place-self: center;
+    max-width: 60%;
+    max-height: 60%;
+    cursor: pointer;
+}
+
+.index-page__list__item__button {
+    color: #555555;
+    place-self: center;
+    transition: .15s;
+    font-family: Arial, serif;
+    font-size: 1.4vw;
+}
+
+.index-page__list__item__button:hover {
+    color: #da3635;
+    place-self: center;
+    transition: .15s;
+}
+
+
+.content__button {
+    border: none;
+    outline: none;
+    background-color: #d83924;
+    box-shadow: 0 0.2vw 0 0 #942928;
+    border-radius: 0.2vw;
+    color: white;
+    padding: 0 2vw;
+    height: 3vw;
+    margin: 2vw 0;
+    font-family: Arial, serif;
+    font-size: 1.1vw;
+    transition: .15s;
+    cursor: pointer;
+}
+
+.content__button:hover {
+    background-color: #da3635;
+    transition: .15s;
+}
+
+.content__table-wrapper {
+    max-width: 75vw;
+    height: auto;
+    margin-bottom: 10vw;
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: auto;
+    border-radius: 0.2vw;
+}
+
+.content__table-wrappe-short {
+    width: 75vw;
+    min-height: 20vw;
+    height: 5vw;
+    overflow: hidden;
+    border-radius: 0.2vw;
+}
+
+.content__table-wrapper__table {
+    cursor: pointer;
+    border-collapse: collapse;
+}
+
+.content__table-wrapper__table tr {
+    cursor: pointer;
+    color: #942928;
+    background-color: white;
+    border-bottom: 0.1vw solid #942928;
+    border-collapse: collapse;
+    font-size: 0.9vw;
+    height: 3vw;
+    font-family: Arial, serif;
+    text-align: center;
+}
+
+.content__table-wrapper__table th {
+    text-align: center;
+    font-family: Arial, serif;
+    font-size: 0.9vw;
+    background-color: #d83924;
+    color: white;
+    height: 3vw;
+    padding: 0 1vw;
+    white-space: nowrap;
+    transition: .15s;
+}
+
+.content__table-wrapper__table th:hover {
+    background-color: #942928;
+    transition: .15s;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 4fr 1.5fr;
+    box-shadow: 0 0 0.2vw 0 #333333;
+    height: 5vw;
+}
+
+.header__logo {
+    justify-self: start;
+    align-self: center;
+    grid-area: 1 / 2 / span 1 / span 1;
+    width: 8vw;
+    cursor: pointer;
+}
+
+.header__list {
+    grid-area: 1 / 3 / span 1 / span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    color: #555555;
+    align-self: center;
+}
+
+.header__list__item {
+    margin-left: 1vw;
+    font-family: Arial, serif;
+    font-size: 1.2vw;
+    transition: .15s;
+}
+
+.header__list__item:hover {
+    color: #da3635;
+    transition: .15s;
+    cursor: pointer;
+}
+
+.h1 {
+    color: #dc3635;
+    font-family: Arial, serif;
+    font-size: 3vw;
+    margin: 2vw 0;
+    font-weight: 400;
+}
+
+.h2 {
+    font-family: Arial, serif;
+    color: rgb(77, 77, 77);
+    font-size: 1.3vw;
+    margin: 0;
+    font-weight: 400;
+}
+
+.white-space {
+    margin: 1vw;
+}
+
+.heading {
+    display: grid;
+    font-family: Arial, serif;
+}
+
+.invisible-href {
+    color: inherit;
+    text-decoration: none;
+}
+
+.invisible-href:link:hover {
+    background-color: inherit;
+    text-decoration: none;
+}
+
+.input-text:focus {
+    transition: 0.2s;
+    background-color: #d6d6d6;
+    border-bottom: 0.2vw solid #da3635;
+}
+
+.fieldset {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    width: 20vw;
+}
+
+.fieldset__text {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2vw;
+    grid-column: 1 / span 1;
+}
+
+.fieldset__input-text {
+    justify-content: start;
+    align-items: center;
+    grid-column: 2 / span 1;
+    border: none;
+    color: #da3635;
+    height: 2vw;
+    width: 20vw;
+    border-bottom: 0.1vw solid #666666;
+}
+
+.client-form {
+    display: grid;
+    width: 75vw;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0.05vw solid #D4DADB;
+    border-radius: 0.2vw;
+    padding: 0 1.5vw;
+    background-color: white;
+}
+
+.client-form__heading {
+    display: grid;
+    justify-items: center;
+    padding: 0.5vw 0;
+    font-size: 1.2vw;
+    font-family: Arial, serif;
+    color: #dc3635;
+}
+
+.client-form__info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.client-form__info__text {
+    padding-left: 15%;
+    font-family: Arial, serif;
+    font-size: 1vw;
+    margin: 0.8vw 0;
+}
+
+.client-form__info__text-input {
+    width: 80%;
+    justify-self: center;
+    outline: none;
+    border: none;
+    border-bottom: 0.05vw solid dimgray;
+}
+
+.client-form__info__date-input {
+    width: 80%;
+    justify-self: center;
+    outline: none;
+    border: none;
+    border-bottom: 0.05vw solid dimgray;
+    padding: 1vw 0;
+}
+
+.client-form__info__text-input:focus {
+    border-bottom: 0.05vw solid #da3635;
+    transition: 0.2s;
+}
+
+.client-form__info__select {
+    outline: none;
+    border: none;
+    width: 85%;
+    place-self: center;
+    border-bottom: 1px solid;
+    color: dimgray;
+    padding: 0.5vw;
+}
+
+.client-form__info__checkbox {
+    justify-self: start;
+    align-self: center;
+    width: 1.3vw;
+    margin-left: 1.3vw;
+    height: 1.3vw;
+}
+
+.client-form__button {
+    grid-column: 1 / span 3;
+    width: 20%;
+    place-self: center;
+    margin: 1vw;
+}
+
+.form-thin {
+    display: grid;
+    width: 30vw;
+}
+
+.form-thin__button {
+    grid-column: 1 / span 2;
+    width: 20vw;
+    place-self: center;
+    margin-bottom: 0;
+}
+
+.content__form-wrapper {
+    display: grid;
+    place-items: center;
+    margin: 2vw 0;
+    box-shadow: 0 0 0.1vw 0.01vw #333333;
+    border-radius: 0.3vw;
+    padding: 2vw;
+}
